@@ -1,0 +1,106 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin reset css */
+
+
+
+*{
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+body{
+    background-image: url('../img/wooden.jpg');
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.table {
+    background-color: #ffffffcf;
+    color: #000000;
+}
+
+.border {
+    border: 2px solid #000000;
+    /* border-radius: 10px; */
+}
+
+.cellule {
+    contain: content;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 2px;
+    padding: 4px;
+}
+
+.cell_6 {
+    width: calc(100% / 6);
+}
+
+.cell_5 {
+    width: calc(100% / 5);
+}
+
+#user_list, #create_user, #session_list, #create_session {
+    margin: 0 auto 20px auto;
+    width: 90%;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"],
+input[type="email"] {
+    width: 90%;
+}

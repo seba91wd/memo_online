@@ -1,0 +1,562 @@
+/* reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /* font: inherit; */
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+input[type=submit] {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* fin reset css */
+/* ********************************************************************** */
+
+* {
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+}
+
+body {
+    background: url(../img/wooden.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 26px;
+    padding: 8px 0;
+    background-color: #F25CBE;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 8px 0;
+}
+
+p {
+    line-height: 1.2;
+    padding: 2px 4px;
+}
+
+section {
+    box-shadow: 5px 5px 10px 0px #000000;
+    width: 300px;
+    height: 300px;
+    margin: 0px 20px 80px 20px;
+    transition: 1s;
+}
+
+section:hover {
+    scale: 1.1;
+}
+
+button {
+    width: fit-content;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color_1 {
+    background-color: #F25CBE !important;
+}
+
+.color_2 {
+    background-color: #50C4F2 !important;
+}
+
+.color_3 {
+    background-color: #D7F205 !important;
+}
+
+.color_4 {
+    background-color: #F2D64B !important;
+}
+
+.color_5 {
+    background-color: #F29829 !important;
+}
+
+.div_confimation{
+    contain: content;
+    width: 0px;
+    transition: 0.5s;
+}
+
+.rotate_elem {
+    cursor: pointer;
+}
+
+/* ************************************** */
+/* Titre, nav-bar, boutton nav-bar */
+
+header {
+    width: 50%;
+    margin: 12px auto 0 auto;
+    text-align: center;
+    border-radius: 8px 8px 29px 29px;
+    transition: 1s ease;
+}
+
+.nav_btn {
+    width: 33.33%;
+    padding: 8px 0;
+    border: 0px;
+}
+
+/* Ajouté en JS */
+.border_rad_off {
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px 0px #000000;
+}
+
+#btn_post_it {
+    border-radius: 0px 0px 0px 30px;
+    background-color: #F29829;
+    float: left;
+}
+
+#btn_session {
+    background-color: #F2D64B;
+}
+
+#btn_option {
+    border-radius: 0px 0px 30px 0px;
+    background-color: #50C4F2;
+    float: right;
+}
+
+/* #btn_post_it:hover, #btn_session:hover, #btn_option:hover {
+    transition: 1s;
+    scale: 1.1;
+    box-shadow: 5px 5px 10px 0px #000000;
+} */
+
+/* nav-bar div MÉMO */
+#div_post_it {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #F29829;
+}
+
+/* nav-bar div SESSION */
+#div_session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #F2D64B;
+    /* z-index: +1; */
+    position: relative;
+    contain: content;
+    overflow: auto;
+}
+
+#div_management_right{
+    width: 95%;
+}
+
+#right_user_table {
+    overflow-y: auto;
+    overflow-x: auto;
+    contain: content;
+    transition: 1s;
+}
+
+.border_table {
+    border: 2px solid #000000!important;
+    border-radius: 15px;
+    margin: 2px;
+    padding: 6px;
+}
+
+.width_20 {
+    width: 20%;
+    min-width: 14%;
+}
+
+.width_33 {
+    width: 33%;
+}
+
+.width_50 {
+    width: 50%;
+}
+
+/* table,
+th,
+tr,
+td {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    margin: 2px;
+    padding: 6px;
+    border-collapse: inherit;
+    border-spacing: 4px 4px;
+    text-align: center;
+}
+*/
+
+#div_input_load_session {
+    display: flex;
+    align-items: center;
+    height: 27px;
+    transition: 0.5s;
+}
+
+#div_input_load_session * {
+    transition: 0.5s;
+}
+
+
+#div_session input[type=text] {
+    background: none;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin-right: 5px;
+    height: 27px;
+    width: 190px;
+}
+
+
+/* nav-bar div OPTION */
+#div_option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #50C4F2;
+}
+
+#bg_img {
+    opacity: 0;
+    width: 0;
+}
+
+#btn_bg_img_browse{
+    contain: content;
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 0px 6px;
+    margin-right: 6px;
+    transition: 0.5s;
+}
+
+#div_bg_img_browse {
+    display: flex;
+    align-items: center;
+    height: 27px;
+    transition: 0.5s;
+}
+
+#btn_bg_img_submit {
+    transition: 0.5s;
+}
+
+#cat_png {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -6px;
+}
+
+#div_filter {
+    overflow-y: hidden;
+    contain: content;
+    transition: 1s;
+    height: 0;
+}
+
+#div_filter_case{
+    justify-content: space-around;
+}
+
+/* ************************************** */
+/* Corrige le probleme de l'aparition des icones xv */
+div:has(> #btn_all_delete, >#btn_leave_session) {
+    height: 27px;
+}
+/* ************************************** */
+/* Formulaire */
+
+#div_section_form{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 50px 0;
+    transition: 1s;
+}
+
+#section_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_title,
+.form_text {
+    border: 5px solid #000000;
+    border-radius: 20px;
+    background: transparent;
+    padding: 0px 4px;
+    margin: 4px;
+    width: 90%;
+}
+
+.form_title {
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: center;
+}
+
+.form_text {
+    height: 232px;
+    resize: none;
+}
+
+.form_btn * {
+    margin: 0 10px;
+}
+
+.select_color {
+    width: fit-content;
+    border-radius: 10px;
+    margin-left: 6px;
+    background: #F25CBE;
+    border: 1px solid #000000;
+}
+
+.icon_xv * {
+    transition: 0.5s;
+}
+
+.icon_x {
+    cursor: pointer;
+}
+
+/* ************************************** */
+/* Post_it_mesage  */
+
+#div_section_post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .section_mesage {} */
+
+/* .section_detail {} */
+
+.mesage_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_detail_back {
+    margin-left: 100px;
+    margin-bottom: 6px;
+}
+
+
+/* .section_edit {} */
+
+.section_edit form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_bg {
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+}
+
+.statut_1 .img_bg {
+    background-image: url(../img/valide.png);
+}
+
+.statut_2 .img_bg {
+    background-image: url(../img/archive.png);
+}
+
+/* ************************************** */
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div {
+    margin: auto;
+    width: 70%;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #50C4F2;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+
+/* ************************************** */
+/* Responsive adaptatif */
+
+@media only screen and (max-width: 1230px) {
+    header {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    header {
+        width: 100%;
+    }
+    #right_user_table {
+        font: small-caption;
+    }
+}

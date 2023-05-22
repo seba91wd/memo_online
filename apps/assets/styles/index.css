@@ -1,0 +1,199 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin reset css */
+
+
+
+*{
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+body{
+    background-image: url('../img/bg_index.jpg');
+}
+
+section {
+    text-align: center;
+    min-height: 350px;
+    width: 350px;
+    box-shadow: 5px 5px 10px 0px #000000;
+    margin: 10px;
+    transition: 1s;
+}
+
+section:hover {
+    z-index: +1;
+    /* scale: 1.1; */
+}
+
+h1{
+    font-size: 24px;
+    margin: 30px auto!important;
+    width: 310px;
+}
+
+h2{
+    font-size: 20px;
+    margin: 6px 0px;
+}
+
+p {
+    line-height: 1.2;
+}
+
+a {
+    color: inherit;
+}
+
+form , #div_connexion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset{
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 5px auto;
+    border-radius: 18px;
+    color: #000000;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0px 6px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+{
+    width: 220px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000000;
+}
+
+button, input[type="submit"]{
+    cursor: pointer;
+    margin: 15px 0px;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    background-color: transparent;
+    color: #000000;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn_deconnexion{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 15px auto auto;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    color: #000000;
+}
+
+.msg{
+    background-color: #0efc00;
+    border-radius: 13px;
+    text-align: center;
+    width: fit-content;
+    padding: 6px 60px;
+    margin: 14px auto 0 auto;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.fieldset_style{
+    transition: 1s;
+    border-color: #00000000;
+    contain: content;
+    padding: 0;
+}
+
+.fieldset_anim{
+    cursor: pointer;
+}
+
+.div_ico{
+    transition: 1s;
+    opacity: 0;
+    height: 0px;
+}
+
+.form_new_name_session, .form_new_pass_session, .form_delete_session, .form_remove_session{
+    transition: 1s;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0;
+}
+
+.input_new_session_name, .input_new_session_pass{
+    transition: 1s;
+    width: 0px !important;
+}
+
+.btn_new_name_session, .btn_new_pass_session, .btn_del_session, .btn_rem_session{
+    cursor: pointer;
+}
+
+.del_msg{
+    width: fit-content;
+}
